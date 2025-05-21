@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emotions_by_week"
+        android:fontFamily="@font/gwen_trial_regular"
+        android:textSize="36sp"
+        android:textColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            android:background="@color/dark_gray">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="horizontal"
+                android:background="@color/black"
+                android:layout_marginBottom="1dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/velasans_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="Понедельник\n17 февраля\n1\n2\n2\n2\n2\n2\n2\n2\n2\n2\n"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/velasans_regular"
+                    android:text="Спокойствие\nПродуктивность\nСчастье\nВыгорание"
+                    android:textColor="@color/strange_gray"
+                    android:textSize="12sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp">
+                    <androidx.constraintlayout.helper.widget.Flow
+                        android:id="@+id/flow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        app:constraint_referenced_ids="emotion1,emotion2,emotion3,emotion"
+                        app:flow_horizontalAlign="end"
+                        app:flow_horizontalBias="1"
+                        app:flow_horizontalGap="4dp"
+                        app:flow_horizontalStyle="packed"
+                        app:flow_verticalGap="4dp"
+                        app:flow_wrapMode="chain"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <ImageView
+                        android:id="@+id/emotion"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/summertime_sadness" />
+
+                    <ImageView
+                        android:id="@+id/emotion1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/mithosis" />
+
+                    <ImageView
+                        android:id="@+id/emotion2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/lightning_1" />
+
+                    <ImageView
+                        android:id="@+id/emotion3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ellipse" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/black"
+                android:layout_marginBottom="1dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/velasans_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="Вторник\n18 февраля"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/velasans_regular"
+                    android:text="Выгорание\nУсталость"
+                    android:textColor="@color/strange_gray"
+                    android:textSize="12sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp">
+                    <androidx.constraintlayout.helper.widget.Flow
+                        android:id="@+id/flow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        app:constraint_referenced_ids="emotion21,emotion22"
+                        app:flow_horizontalAlign="end"
+                        app:flow_horizontalBias="1"
+                        app:flow_horizontalGap="4dp"
+                        app:flow_horizontalStyle="packed"
+                        app:flow_verticalGap="4dp"
+                        app:flow_wrapMode="chain"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <ImageView
+                        android:id="@+id/emotion21"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="4dp"
+                        android:src="@drawable/summertime_sadness"
+                        app:layout_constraintEnd_toStartOf="@+id/emotion22" />
+
+                    <ImageView
+                        android:id="@+id/emotion22"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/shell"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/black"
+                android:layout_marginBottom="1dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/velasans_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="Среда\n19 февраля"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/velasans_regular"
+                    android:text=""
+                    android:textColor="@color/strange_gray"
+                    android:textSize="12sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp">
+                    <androidx.constraintlayout.helper.widget.Flow
+                        android:id="@+id/flow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        app:constraint_referenced_ids="emotion01"
+                        app:flow_horizontalAlign="end"
+                        app:flow_horizontalBias="1"
+                        app:flow_horizontalGap="4dp"
+                        app:flow_horizontalStyle="packed"
+                        app:flow_verticalGap="4dp"
+                        app:flow_wrapMode="chain"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <ImageView
+                        android:id="@+id/emotion01"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/empty" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/black"
+                android:layout_marginBottom="1dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/velasans_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="Четверг\n20 февраля"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/velasans_regular"
+                    android:text=""
+                    android:textColor="@color/strange_gray"
+                    android:textSize="12sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp">
+                    <androidx.constraintlayout.helper.widget.Flow
+                        android:id="@+id/flow03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        app:constraint_referenced_ids="emotion02"
+                        app:flow_horizontalAlign="end"
+                        app:flow_horizontalBias="1"
+                        app:flow_horizontalGap="4dp"
+                        app:flow_horizontalStyle="packed"
+                        app:flow_verticalGap="4dp"
+                        app:flow_wrapMode="chain"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <ImageView
+                        android:id="@+id/emotion02"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/empty" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/black"
+                android:layout_marginBottom="1dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/velasans_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="Пятница\n21 февраля"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/velasans_regular"
+                    android:text=""
+                    android:textColor="@color/strange_gray"
+                    android:textSize="12sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp">
+                    <androidx.constraintlayout.helper.widget.Flow
+                        android:id="@+id/flow04"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        app:constraint_referenced_ids="emotion03"
+                        app:flow_horizontalAlign="end"
+                        app:flow_horizontalBias="1"
+                        app:flow_horizontalGap="4dp"
+                        app:flow_horizontalStyle="packed"
+                        app:flow_verticalGap="4dp"
+                        app:flow_wrapMode="chain"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <ImageView
+                        android:id="@+id/emotion03"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/empty" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/black"
+                android:layout_marginBottom="1dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/velasans_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="Суббота\n22 февраля"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/velasans_regular"
+                    android:text=""
+                    android:textColor="@color/strange_gray"
+                    android:textSize="12sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp">
+                    <androidx.constraintlayout.helper.widget.Flow
+                        android:id="@+id/flow05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        app:constraint_referenced_ids="emotion04"
+                        app:flow_horizontalAlign="end"
+                        app:flow_horizontalBias="1"
+                        app:flow_horizontalGap="4dp"
+                        app:flow_horizontalStyle="packed"
+                        app:flow_verticalGap="4dp"
+                        app:flow_wrapMode="chain"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <ImageView
+                        android:id="@+id/emotion04"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/empty" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/black"
+                android:layout_marginBottom="1dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/velasans_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="Воскресенье\n23 февраля"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/velasans_regular"
+                    android:text=""
+                    android:textColor="@color/strange_gray"
+                    android:textSize="12sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp">
+                    <androidx.constraintlayout.helper.widget.Flow
+                        android:id="@+id/flow7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        app:constraint_referenced_ids="emotion0"
+                        app:flow_horizontalAlign="end"
+                        app:flow_horizontalBias="1"
+                        app:flow_horizontalGap="4dp"
+                        app:flow_horizontalStyle="packed"
+                        app:flow_verticalGap="4dp"
+                        app:flow_wrapMode="chain"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <ImageView
+                        android:id="@+id/emotion0"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/empty" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

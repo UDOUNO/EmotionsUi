@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/journalFragment"
+        android:name="com.example.aaaaaaaaaaa.JournalFragment"
+        android:label="JournalFragment" >
+        <action
+            android:id="@+id/action_journalFragment_to_addPostFragment"
+            app:destination="@id/addPostFragment" />
+        <action
+            android:id="@+id/action_journalFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_journalFragment_to_statFragment"
+            app:destination="@id/statFragment" />
+        <action
+            android:id="@+id/action_journalFragment_to_addPostNoteFragment"
+            app:destination="@id/addPostNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.aaaaaaaaaaa.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_journalFragment"
+            app:destination="@id/journalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPostFragment"
+        android:name="com.example.aaaaaaaaaaa.AddPostFragment"
+        android:label="AddPostFragment" >
+        <action
+            android:id="@+id/action_addPostFragment_to_journalFragment"
+            app:destination="@id/journalFragment" />
+        <action
+            android:id="@+id/action_addPostFragment_to_addPostNoteFragment"
+            app:destination="@id/addPostNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.aaaaaaaaaaa.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_journalFragment"
+            app:destination="@id/journalFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_statFragment"
+            app:destination="@id/statFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statFragment"
+        android:name="com.example.aaaaaaaaaaa.StatFragment"
+        android:label="StatFragment" >
+        <action
+            android:id="@+id/action_statFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_statFragment_to_journalFragment"
+            app:destination="@id/journalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPostNoteFragment"
+        android:name="com.example.aaaaaaaaaaa.AddPostNoteFragment"
+        android:label="AddPostNoteFragment" >
+        <action
+            android:id="@+id/action_addPostNoteFragment_to_journalFragment"
+            app:destination="@id/journalFragment" />
+        <action
+            android:id="@+id/action_addPostNoteFragment_to_addPostFragment"
+            app:destination="@id/addPostFragment" />
+    </fragment>
+</navigation>
